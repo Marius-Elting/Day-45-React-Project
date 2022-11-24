@@ -1,0 +1,73 @@
+.Main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.Main>h3 {
+    color: #008005;
+}
+
+.Main>h2 {
+    font-size: 30px;
+    margin: 50px;
+}
+
+.Main section {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+    padding: 0 100px;
+}
+
+.Main article {
+    position: relative;
+    padding-right: 30px;
+
+}
+
+
+
+.Main article:nth-of-type(1)::before {
+    content: ' ';
+    background-image: url("../../../public/assets/img/brush.svg");
+    position: absolute;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    left: -25px;
+}
+
+.Main article:nth-of-type(2)::before {
+    content: ' ';
+    background-image: url("../../../public/assets/img/object-select.svg");
+    position: absolute;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    left: -25px;
+}
+
+.Main article:nth-of-type(3)::before {
+    content: ' ';
+    background-image: url("../../../public/assets/img/megaphone.svg");
+    position: absolute;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    left: -25px;
+}
+
+.Main article:nth-of-type(4)::before {
+    content: ' ';
+    background-image: url("../../../public/assets/img/globe-line.svg");
+    /* display: flex; */
+    position: absolute;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    left: -25px;
+}
